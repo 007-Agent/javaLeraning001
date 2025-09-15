@@ -11,8 +11,8 @@ public class lrsson20java {
 
 class Human{
 	
-	private String name;
-	private int age;
+	public String name;
+	public int age;
 	
 	public Human() {
 		System.out.print("привет из первого конструктора!");

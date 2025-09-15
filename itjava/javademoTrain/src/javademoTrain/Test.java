@@ -6,15 +6,15 @@ import java.util.Arrays;
 public class Test {
     
 	public static void main(String[] args){
-// String text = "apple banana apricot avocado berry almond";
-// String[] words = text.split(" ");
-//  ArrayList<String> aWordsList = new ArrayList<>();
-// System.out.println(Arrays.toString(words));
-// for(String word : words){
-//   if(!word.isEmpty() && word.charAt(0) == 'a' || word.charAt(0) == 'A'){
-// 	aWordsList.add(word);
-//   }
-// }	
+String text = "apple banana apricot avocado berry almond";
+String[] words = text.split(" ");
+ ArrayList<String> aWordsList = new ArrayList<>();
+System.out.println(Arrays.toString(words));
+for(String word : words){
+  if(!word.isEmpty() && word.charAt(0) == 'a' || word.charAt(0) == 'A'){
+	aWordsList.add(word);
+  }
+}	
 // String[] aWords = new String[aWordsList.size()];
 //         aWords = aWordsList.toArray(aWords);
 
