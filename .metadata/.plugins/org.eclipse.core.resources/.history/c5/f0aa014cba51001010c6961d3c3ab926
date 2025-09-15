@@ -1,0 +1,15 @@
+package Interfaces;
+
+public class test {
+	public static void main(String[] args) {
+		Animal animal1 = new Animal(12);
+		Person person1 = new Person("Bob");
+		
+		animal1.sleep();
+		person1.sayHello();
+		animal1.showInfo();
+		person1.showInfo();
+	}
+	
+}
+ 

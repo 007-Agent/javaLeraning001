@@ -1,0 +1,26 @@
+package lessonJava;
+
+public class lesson24 {
+	public static void main(String[] args) {
+		 Humann h1 = new Humann("Bob", 12);
+		 String h2 = h1.toString();
+		 System.out.println(h2);
+	}
+}
+
+class Humann{
+	
+	private String name;
+	private int age;
+	
+	
+	public Humann(String name, int age) {
+		this.name = name;
+		this.age = age;
+		
+	}
+	
+	
+	
+	
+}

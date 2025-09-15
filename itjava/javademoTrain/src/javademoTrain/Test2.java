@@ -1,0 +1,280 @@
+package javademoTrain;
+
+import java.util.ArrayList;
+
+import java.util.List;
+
+public class Test2 {
+ public static void main(String[] args){
+
+  
+      int[] arr1 = {1, 2, 3, 4, 5};
+int[] arr2 = {4, 5, 6, 7, 8};
+      List<Integer> common = new ArrayList<>();
+
+      for(int i = 0; i < arr1.length; i++){
+        for(int j = 0; j < arr2.length; j++){
+            if(arr1[i] == arr2[j]){
+                common.add(arr1[i]);
+            }
+        }
+      }
+      System.out.println(common);
+
+    // ........................................................
+
+//    String str = "1203405";
+//    int index = str.lastIndexOf("0");
+//    System.out.println(index);
+
+// ......................................................
+
+// String str = "abc def jhi";
+// String[] arr = str.split(" ");
+// int result = arr.length;
+// System.out.println(result);
+
+// .....................................................
+//  int[] numbers = {12, 345, 6789, -12345, 99, 1000, -999, 123};
+//  int[] arr = new int[numbers.length];
+//   int index = 0;
+//  for(int num : numbers){
+//     String strNum = Integer.toString(Math.abs(num));
+//     if(strNum.length() > 3){
+//         arr[index] = num;
+//         index++;
+//         System.err.println(strNum);
+//     }
+//  }
+//  System.out.println(Arrays.toString(arr));
+
+// .........................................................
+//                                                                                                                             int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+// int count = (array.length - 4 + 4) / 5;
+// int[] arr1 = new int[count];
+// int index = 0;
+//  for(int i = 4; i < array.length; i+=5){
+//     arr1[index] = array[i];
+//     index++;
+//  }
+// String str = Arrays.toString(arr1);
+//  System.out.println(str);
+
+///////////////////////////////////////////////////////////////////
+
+// String[] array = {"index.html", "style.css", "about.html", "script.js", "contact.html"};
+// ArrayList<String> htmlFiles = new ArrayList<>();
+
+//  for (String str : array) {
+//             if (str.contains(".html")) {
+//                 htmlFiles.add(str);
+//             }
+//         }
+// System.out.println(htmlFiles);
+
+// .......................................................
+// String input = "пример строки для преобразования";
+
+// String[] str = input.split(" ");
+// for(int i = 0; i < str.length; i++){
+//     String word = str[i];
+//     String lastChar = Character.toString(word.charAt(word.length() - 1)).toUpperCase();
+//     System.out.println(lastChar);
+// }
+
+//////////////////////////////////////////////////////
+
+// String str = "12034050607";
+// int index = 0;
+// int coint = 0;
+// for(int i = 0; i < str.length(); i++){
+//      if(str.charAt(i) == '0'){
+//           index = i;
+//           coint++;
+//           if(coint == 3){
+//             System.out.println("позиция третьего нуля " + index);
+//            break;
+
+//           }
+//      }
+// }
+
+// .........................................................
+ 
+// String str = "1,2,10,100,3";
+
+//         // Разбиваем строку по запятым на массив строк
+//         String[] parts = str.split(",");
+   
+//         int max = Integer.MIN_VALUE; 
+//         for (String part : parts) {
+//             int num = Integer.parseInt(part.trim()); 
+//             System.out.println("Максио: " + num);
+//             if (num > max) {
+//                 max = num; 
+//             }
+//         }
+
+//         System.out.println("Максимальное число: " + max);
+
+// .......................................................
+
+// String str = "abcde";
+// char[] charArray = str.toCharArray();
+
+// // Вывод массива для проверки
+// for (char c : charArray) {
+//     System.out.print(c + " ");
+// }
+
+// ....................................................
+
+// String str = "kebab-case";
+// String[] result = str.split("-");
+// result[0] = "snake";
+// System.out.println(Arrays.toString(result));
+//  String snake = String.join("_", result);
+// System.out.println(snake);
+
+// .........................................................
+
+//  String str = "023m0df0dfg0";
+
+//         for (int i = 0; i < str.length(); i++) {
+//             if (str.charAt(i) == '0') {
+//                 System.out.println("Ноль найден в позиции: " + i);
+//             }
+//         }
+
+// .............................................................
+
+//       int[] arr = {1, 2, 3, 4, 5, 6};
+
+//         int mid = arr.length / 2;
+//         int sumFirstHalf = 0;
+//         int sumSecondHalf = 0;
+// for (int i = 0; i < mid; i++) {
+//             sumFirstHalf += arr[i];
+//         }
+// for (int i = mid; i < arr.length; i++) {
+//             sumSecondHalf += arr[i];
+//      if (sumSecondHalf != 0) {
+//             double result = (double) sumFirstHalf / sumSecondHalf;
+//             System.out.println("Результат деления: " + result);
+//         } else {
+//             System.out.println("Деление на ноль невозможно");
+//         }
+
+// .........................................................
+
+// String[] arr = {"ab", "cd", "ef"};
+
+// ArrayList<Character> list = new ArrayList<>();
+// char[] chars = new char[0];
+// for (String s : arr) {
+//     for (char c : s.toCharArray()) {
+//         list.add(c);
+//     }
+// }
+// System.out.println(list);
+
+// int[] arr1 = {1, 2, 3};
+//         int[] arr2 = {4, 5, 6};
+
+//         for (int i = 0; i < arr1.length; i++) {
+//             System.out.println(arr1[i] + "," + arr2[i]);
+//         }
+
+// ..........................................................
+
+//      StringBuilder sb = new StringBuilder();
+//         int j, b;   
+//         int a = 8;
+//         while(a !=0 ) {  
+//             b = a%2;  
+          
+//             sb.append(b);
+//             a = a/2;  
+//         } 
+//         String binaryReversed = sb.toString();
+// String binary = new StringBuilder(binaryReversed).reverse().toString();
+
+// // Создаем массив
+// int[] binaryArray = new int[binary.length()];
+
+// // Заполняем массив цифрами двоичного числа
+// for (int i = 0; i < binary.length(); i++) {
+//     binaryArray[i] = binary.charAt(i) - '0'; // преобразуем символ в число
+// } 
+//   // Выводим массив
+// for (int digit : binaryArray) {
+//     System.out.print(digit + " ");
+// }     
+     
+// ......................................................
+ 
+// String str = "120340506074501107";
+// StringBuilder sb = new StringBuilder();
+
+// int index = 0;
+// int coint = 0;
+// for(int i = 0; i < str.length(); i++){
+//      if(str.charAt(i) == '0'){
+//           index = i;
+//           coint++;
+//           sb.append(index);
+//           }
+//      }
+// String binaryReversed = sb.toString();
+// String binary = new StringBuilder(binaryReversed).toString();
+// int[] binaryArray = new int[binary.length()];
+// for (int i = 0; i < binary.length(); i++) {
+//     binaryArray[i] = binary.charAt(i) - '0'; // преобразуем символ в число
+// }
+// int[] newArr = Arrays.copyOfRange(binaryArray, 1, binaryArray.length - 1);
+// System.out.println(Arrays.toString(newArr));
+
+// ...............................................
+
+// int arr1[] = {123, 334, 456, 556, 789};
+
+// int[] filteredArr = Arrays.stream(arr1)
+// .filter(num -> {
+//      String numStr = String.valueOf(num);
+//      long distinctCount = numStr.chars().distinct().count();
+//      return numStr.length() != distinctCount;
+// }).toArray();
+// System.out.println(Arrays.toString(filteredArr));
+
+// ................................................
+
+// StringBuilder sb = new StringBuilder();
+
+// for (int i = 0; i < 5; i++){
+//    sb.append("x");
+// }
+// System.out.println(sb.toString());
+
+// ................................................
+
+// int[] arr =  {1, 0, 2, 3, 0, 5};
+// int[] filteredArr = Arrays.stream(arr).filter(num -> {
+     
+//      return num != 0;
+// }).toArray();
+// System.out.println(Arrays.toString(filteredArr));
+
+// ..............................................
+
+// for(int num = 10; num <= 1000; num++){
+//      String numStr = Integer.toString(num);
+//      char firstChar = numStr.charAt(0);
+//      if(firstChar % 2 == 0){
+//           System.out.print(numStr + " ");
+//      }
+// }
+
+
+
+}    
+}     
