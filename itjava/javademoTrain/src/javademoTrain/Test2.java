@@ -3,6 +3,7 @@ package javademoTrain;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Test2 {
   public static void main(String[] args) {
@@ -286,19 +287,125 @@ public class Test2 {
     // String str = String.valueOf(num);
 
     // for (int i = 0; i < str.length(); i++) {
-    //   char c = str.charAt(i);
-    //   int digit = c - '0'; // Преобразуем символ в цифру
-    //   if (digit % 2 == 0) { // Проверяем, четная ли
-    //     count++;
-    //   }
+    // char c = str.charAt(i);
+    // int digit = c - '0'; // Преобразуем символ в цифру
+    // if (digit % 2 == 0) { // Проверяем, четная ли
+    // count++;
+    // }
     // }
     // System.out.println("Количество четных цифр: " + count);
 
     // StringBuilder sb = new StringBuilder();
     // for(int i = 1; i < 10; i++ ){
-    //   sb.append(i);
+    // sb.append(i);
     // }
     // System.out.println(sb);
 
+    // String str = "123 456 789";
+    // String[] parts = str.split(" ");
+    // int result = 0;
+    // for(String elem : parts){
+
+    // int digit = Integer.parseInt(elem) ;
+
+    // result += digit;
+    // }
+    // System.out.println(result);
+
+    // String str = "123 456 789";
+    // String[] parts = str.split(" "); // разбиваем строку по пробелам
+    // int sum = 0;
+    // for (String part : parts) {
+    // int number = 0;
+    // for (int i = 0; i < part.length(); i++) {
+    // char c = part.charAt(i);
+    // int digit = c - '0'; // преобразовываем символ в цифру
+    // number = number * 10 + digit; // собираем число
+    // }
+    // sum += number; // добавляем к общей сумме
+    // }
+    // System.out.println("Сумма чисел: " + sum);
+
+    // -----------------------------------------------------------
+
+    // String str = "word1 word2 word3";
+    // int N = 2; // Сколько слов хотим получить
+
+    // String[] words = str.split(" ");
+
+    // String result = "";
+
+    // for (int i = 0; i < N && i < words.length; i++) {
+    // if (i > 0) {
+    // result += " "; // добавляем пробел между словами
+    // }
+    // result += words[i]; // добавляем слово к результату
+    // }
+
+    // System.out.println("Первые " + N + " слов: " + result);
+
+    // ----------------------------------------------------------------
+
+    // Scanner scanner = new Scanner(System.in);
+    // System.out.print("Введите целое число: ");
+    // int number = scanner.nextInt();
+    // if (isValidNumber(number)) {
+    // System.out.println("Да, у числа " + number + " есть только один делитель,
+    // кроме 1 и самого числа.");
+    // } else {
+    // System.out.println("Нет, число " + number + " не подходит.");
+    // }
+
+    // public static boolean isValidNumber(int n) {
+    // if (n <= 1) {
+    // return false;
+    // }
+    // double sqrt = Math.sqrt(n);
+    // int root = (int) sqrt;
+    // if (root * root != n) {
+    // return false; // Не квадрат
+    // }
+    // return isPrime(root);
+    // }
+    // public static boolean isPrime(int num) {
+    // if (num <= 1) {
+    // return false;
+    // }
+    // for (int i = 2; i <= Math.sqrt(num); i++) {
+    // if (num % i == 0) {
+    // return false; // Есть делитель, не простое
+    // }
+    // }
+    // return true; // Простое
+    // }
+
+    // ----------------------------------------------------------------
+
+    // String result = "";
+    // for(int i = 0; i < 3; i++){
+    // String str = "xxx ";
+    // result += str;
+
+    // }
+    // System.out.println(result);
+
+    // ---------------------------------------------------------------
+
+    // int[] arr = { 1, 0, 2, 3, 0, 5 };
+
+    // ArrayList<Integer> tempResult = new ArrayList<>();
+    // for (int i = 0; i < arr.length; i += 2) {
+    //   tempResult.add(arr[i]);
+    // }
+    // int[] result = new int[tempResult.size()];
+    // for (int i = 0; i < tempResult.size(); i++) {
+    //   result[i] = tempResult.get(i);
+    // }
+
+    // System.out.print("result: ");
+    // System.out.println(Arrays.toString(result));
+
+    // -------------------------------------------------------------
   }
+
 }
