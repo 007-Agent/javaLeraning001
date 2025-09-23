@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 public class Test3 {
@@ -257,6 +258,60 @@ public class Test3 {
         // }
 
         // System.out.println(result.toString());
+
+        // -------------------------------------------------------------------
+
+        // StringBuilder sb = new StringBuilder();
+        // sb.append("-");
+        // for(int i = 0; i < 6; i++){
+        //     sb.append((i + "-"));
+        // }
+        // System.out.println(sb);
+
+        // ---------------------------------------------
+
+        // char[] arr = {'a', 'b', 'c', 'd', 'e', 'f'};
+        // String[] str = new String[arr.length / 2];
+        // if(arr.length % 2 == 0){
+        //     System.out.println("длина чётная!");
+        //     for(int i = 0; i < arr.length / 2; i++){
+        //       str[i] = "" + arr[2 * i] + arr[2 * i + 1];
+             
+        //     }
+        //     System.out.println(Arrays.toString(str));
+        // }
+
+        // --------------------------------------------------------------------------
+        // int[] arr = new int[10];
+        // for(int i = 0; i < arr.length; i++){
+        //     arr[i] = new Random().nextInt(100) + 1;
+        // }
+        // System.out.println(Arrays.toString(arr));
+
+        // --------------------------------------------------------------------
+
+//         byte[] arr = {1, 2, 8};
+
+       
+//         String[] monthNames = {"янв", "фев", "мар", "апр", "май", "июн",
+//                                "июл", "авг", "сен", "окт", "ноя", "дек"};
+// String[] result = new String[arr.length];
+// for (int i = 0; i < arr.length; i++) {
+          
+//             int monthIndex = arr[i] - 1;
+
+//             if (monthIndex >= 0 && monthIndex < monthNames.length) {
+//                 result[i] = monthNames[monthIndex];
+//             } else {
+//                 result[i] = "неизвестно"; 
+//             }
+//         }
+
+//      System.out.println(java.util.Arrays.toString(result));
+
+// ------------------------------------------------------------
+ 
+
 
     }
 
